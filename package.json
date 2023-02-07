@@ -1,0 +1,28 @@
+{
+  "name": "nasa-project-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install-client": "npm install --prefix client",
+    "install-server": "npm install --prefix server",
+    "server": "npm run watch --prefix server",
+    "client": "npm start --prefix client",
+    "watch": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thtsuman/nasa-project-node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Thtsuman/nasa-project-node/issues"
+  },
+  "homepage": "https://github.com/Thtsuman/nasa-project-node#readme",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
